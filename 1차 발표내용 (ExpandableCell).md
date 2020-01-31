@@ -1,5 +1,5 @@
 # ExpandableCell
-
+***
 ```swift
 struct ExpandableNames {
     var isExpanded: Bool
@@ -7,8 +7,8 @@ struct ExpandableNames {
     let cities  : [String]
 }
 ```
-isExpanded: 변수로 셀들이 확장된 상태인지 아닌지 확인<br />
-cities: 도시들을 저장할 구조체 안의 문자열 배열
+* isExpanded: 변수로 셀들이 확장된 상태인지 아닌지 확인<br />
+* cities: 도시들을 저장할 구조체 안의 문자열 배열
 ```swift
  @objc func handleExpandClose(button: UIButton) {
         
@@ -39,8 +39,8 @@ cities: 도시들을 저장할 구조체 안의 문자열 배열
         
     }
 ```
-Section에 있는 Button을 눌렀을때 Data들이 펼쳐지거나, 닫혀지는 것이므로 <br />
-각 tableView의 HeaderSection에 있는 Expandable하게 될 Button의 tag 값으로 Data들의 섹션값을 구별한다.<br />
+> Section에 있는 Button을 눌렀을때 Data들이 펼쳐지거나, 닫혀지는 것이므로 <br />
+> 각 tableView의 HeaderSection에 있는 Expandable하게 될 Button의 tag 값으로 Data들의 섹션값을 구별한다.<br />
 
 ```swift
 override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -77,10 +77,11 @@ class CityChooseSection: UIView {
     }
 }
 ```
-위의 코드는 Xib의 UIView 클래스 부분의 코드이다. CityChooseSectionDelegate protocol은 TableView의 해당 Section에 맞는 버튼을 눌렀을때 올바르게 foldButton의 data전달이 되기 위한 delegate pattern이다.<br />
-awakeFromNib() <br />
-공식문서의 정의: Prepares the receiver for service after it has been loaded from an Interface Builder archive, or nib file. <br />
-간단하게 해석 하자면 nib 파일에서로드 된 후 서비스를 위해 수신자를 준비하는 함수이다. 그래서 이 메소드 안에서 addTarget을 통해 foldButton에게 delegate패턴인 touchUpFoldButton을 지정해준다.
+> 위의 코드 =Xib의 UIView 클래스 부분의 코드이다. <br />
+>   > CityChooseSectionDelegate protocol TableView의 해당 Section에 맞는 버튼을 눌렀을때 올바르게 foldButton의 data전달이 되기 위한 delegate pattern이다.<br />
+> awakeFromNib() <br />
+>   > 공식문서의 정의: Prepares the receiver for service after it has been loaded from an Interface Builder archive, or nib file. <br />
+>   >   > 간단하게 해석 하자면 nib 파일에서로드 된 후 서비스를 위해 수신자를 준비하는 함수이다. 그래서 이 메소드 안에서 addTarget을 통해 foldButton에게 delegate패턴인 touchUpFoldButton을 지정해준다.
 
 ```swift
 extension CityChooseTableViewController: CityChooseSectionDelegate {
