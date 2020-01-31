@@ -78,11 +78,11 @@ class CityChooseSection: UIView {
     }
 }
 ```
-> #### 위의 코드 =Xib의 UIView 클래스 부분의 코드이다. <br />
->   > CityChooseSectionDelegate protocol TableView의 해당 Section에 맞는 버튼을 눌렀을때 올바르게 foldButton의 data전달이 되기 위한 delegate pattern이다.<br />
-> awakeFromNib() <br />
->   > 공식문서의 정의: Prepares the receiver for service after it has been loaded from an Interface Builder archive, or nib file. <br />
->   >   > 간단하게 해석 하자면 nib 파일에서로드 된 후 서비스를 위해 수신자를 준비하는 함수이다. 그래서 이 메소드 안에서 addTarget을 통해 foldButton에게 delegate패턴인 touchUpFoldButton을 지정해준다.
+ * 위의 코드 =Xib의 UIView 클래스 부분의 코드이다. <br />
+    * CityChooseSectionDelegate protocol TableView의 해당 Section에 맞는 버튼을 눌렀을때 올바르게 foldButton의 data전달이 되기 위한 delegate pattern이다.<br />
+* awakeFromNib() <br />
+    공식문서의 정의: Prepares the receiver for service after it has been loaded from an Interface Builder archive, or nib file. <br />
+* 간단하게 해석 하자면 nib 파일에서로드 된 후 서비스를 위해 수신자를 준비하는 함수이다. 그래서 이 메소드 안에서 addTarget을 통해 foldButton에게 delegate패턴인 touchUpFoldButton을 지정해준다.
 
 ```swift
 extension CityChooseTableViewController: CityChooseSectionDelegate {
@@ -91,12 +91,12 @@ extension CityChooseTableViewController: CityChooseSectionDelegate {
     }
 }
 ```
-실질적인 ExpandableCell이 보여지는 CityChooseTableViewController에서 Delegate 패턴을 통해
+* 실질적인 ExpandableCell이 보여지는 CityChooseTableViewController에서 Delegate 패턴을 통해
 cityChooseSection 메소드로 handleExpandClose 메소드를 연결시켜서 작동되게 하는 코드.
 
-그리고 지정된 더미데이터의 크기 만큼 순차적으로 indexPath 배열을 만들어준다.<br />
-왜 indexPaths 배열을 만드는가?<br />
-뒤에 사용될 deleteRows,insertRows 메소드의 indexPaths 파라미터는 indexPath로 이루어진 배열이므로.
+* 그리고 지정된 더미데이터의 크기 만큼 순차적으로 indexPath 배열을 만들어준다.<br />
+* #### 왜 indexPaths 배열을 만드는가?<br />
+* 뒤에 사용될 deleteRows,insertRows 메소드의 indexPaths 파라미터는 indexPath로 이루어진 배열이므로.
 ```swift
 var indexPaths = [IndexPath]()
        for row in twoDimensionalArray[section].cities.indices{
@@ -105,4 +105,14 @@ var indexPaths = [IndexPath]()
            indexPaths.append(indexPath)
            
        }
+       
+       ....
+       
+       
+       if isExpanded{
+                  tableView.deleteRows(at: indexPaths, with: .fade)
+                  
+              } else{
+                  tableView.insertRows(at: indexPaths, with: .fade)
+              }
 ```
