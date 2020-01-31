@@ -39,8 +39,8 @@ struct ExpandableNames {
         
     }
 ```
-> Section에 있는 Button을 눌렀을때 Data들이 펼쳐지거나, 닫혀지는 것이므로 <br />
-> 각 tableView의 HeaderSection에 있는 Expandable하게 될 Button의 tag 값으로 Data들의 섹션값을 구별한다.<br />
+> * Section에 있는 Button을 눌렀을때 Data들이 펼쳐지거나, 닫혀지는 것이므로 <br />
+> * 각 tableView의 HeaderSection에 있는 Expandable하게 될 Button의 tag 값으로 Data들의 섹션값을 구별한다.<br />
 
 ```swift
 override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
