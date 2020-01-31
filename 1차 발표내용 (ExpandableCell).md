@@ -39,8 +39,8 @@ struct ExpandableNames {
         
     }
 ```
-> * Section에 있는 Button을 눌렀을때 Data들이 펼쳐지거나, 닫혀지는 것이므로 <br />
-> * 각 tableView의 HeaderSection에 있는 Expandable하게 될 Button의 tag 값으로 Data들의 섹션값을 구별한다.<br />
+* Section에 있는 Button을 눌렀을때 Data들이 펼쳐지거나, 닫혀지는 것이므로 <br />
+* 각 tableView의 HeaderSection에 있는 Expandable하게 될 Button의 tag 값으로 Data들의 섹션값을 구별한다.<br />
 
 ```swift
 override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -52,7 +52,8 @@ headerView.delegate = self
 return headerView
 }
 ```
-위의 코드를 보면 테이블뷰의 헤더 섹션부분은 Xib로 커스텀을 했으며, 이 과정속에서 헤더섹션뷰의 foldButton의 tag값을 section으로 지정해줌으로서 Data들의 값들을 foldButton의 tag값으로 관리가 가능해졌다.
+* 위의 코드를 보면 테이블뷰의 헤더 섹션부분은 Xib로 커스텀을 했으며, 이 과정속에서 헤더섹션뷰의 foldButton의 tag값을 section으로 <br />
+* 지정해줌으로서 Data들의 값들을 foldButton의 tag값으로 관리가 가능해졌다.
 
 ```swift
 protocol CityChooseSectionDelegate: class {
@@ -77,7 +78,7 @@ class CityChooseSection: UIView {
     }
 }
 ```
-> 위의 코드 =Xib의 UIView 클래스 부분의 코드이다. <br />
+> #### 위의 코드 =Xib의 UIView 클래스 부분의 코드이다. <br />
 >   > CityChooseSectionDelegate protocol TableView의 해당 Section에 맞는 버튼을 눌렀을때 올바르게 foldButton의 data전달이 되기 위한 delegate pattern이다.<br />
 > awakeFromNib() <br />
 >   > 공식문서의 정의: Prepares the receiver for service after it has been loaded from an Interface Builder archive, or nib file. <br />
