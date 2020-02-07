@@ -9,3 +9,13 @@
 
 ***
 
+
+### 2차 스터디
+* [2차 발표자로 - drag and drop](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/2차%20스터디%20내용.md)
+
+
+
+
+
+***
+
