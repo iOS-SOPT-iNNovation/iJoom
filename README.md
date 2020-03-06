@@ -6,7 +6,6 @@
 
 
 
-
 ***
 
 
@@ -15,19 +14,18 @@
 
 
 
-
-
 ***
 
 ### 3차 스터디
 * [3차 리팩토링 및 코드 공부 - 통신 Moya](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/3차%20스터디.md)
 
-***
+
 
 ***
 
 ### 4차 스터디
-*[4차 NSCache를 이용한 이미지 캐싱처리](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/4차%20스터디%20.md)
+* [4차 NSCache를 이용한 이미지 캐싱처리](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/4차%20스터디%20.md)
+
 
 
 ***
