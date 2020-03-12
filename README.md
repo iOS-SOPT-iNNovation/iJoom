@@ -23,9 +23,14 @@
 
 ***
 
-### 4차 스터디
+### 6차 스터디
 * [4차 NSCache를 이용한 이미지 캐싱처리](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/4차%20스터디%20.md)
 
 
 
 ***
+
+### 7차 스터디
+
+* [6차 Stride문법 및 비동기](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/7차%20스터디.md)
+
