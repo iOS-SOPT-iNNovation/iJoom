@@ -34,3 +34,10 @@
 
 * [7차 Stride문법 및 비동기](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/7차%20스터디.md)
 
+***
+
+### 8차 스터디
+
+*[8차 비동기 queue,sync,async](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/8차%20스터디.md)
+
+***
