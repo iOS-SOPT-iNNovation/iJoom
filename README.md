@@ -41,3 +41,9 @@
 * [8차 비동기 queue,sync,async](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/8차%20스터디.md)
 
 ***
+
+### 9차 스터디
+
+* [9차 POPUPView 실습](https://github.com/iOS-SOPT-iNNovation/iJoom/tree/master/practicePopupView)
+
+***
