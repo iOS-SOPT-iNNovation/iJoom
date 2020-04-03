@@ -14,7 +14,7 @@ class PoPUPViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector(("backgroundTap:"))))
+//        testView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector(("backgroundTap:"))))
       
         // Do any additional setup after loading the view.
     }
@@ -25,5 +25,12 @@ class PoPUPViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
         print(11111)
     }
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if touches.first?.view == testView {
+            return
+        }
+         self.dismiss(animated: true, completion: nil)
+    }
+    
 }
