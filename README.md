@@ -47,3 +47,12 @@
 * [9차 POPUPView 실습](https://github.com/iOS-SOPT-iNNovation/iJoom/tree/master/practicePopupView)
 
 ***
+
+
+### 10차 스터디
+
+* [10차 XLPagerBar 적용](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/10차%20스터디.md)
+
+
+***
+
