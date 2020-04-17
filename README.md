@@ -59,7 +59,7 @@
 
 ### 12차 스터디
 
-*[12차 선택적인 뷰 활성화](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/12차%20스터디.md)
+* [12차 선택적인 뷰 활성화](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/12차%20스터디.md)
 
 
 ***
