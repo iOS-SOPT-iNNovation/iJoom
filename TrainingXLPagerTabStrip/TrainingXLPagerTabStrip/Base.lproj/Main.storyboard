@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,35 +16,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="T5v-0O-Igl" customClass="ButtonBarView" customModule="XLPagerTabStrip">
-                                <rect key="frame" x="0.0" y="131" width="375" height="74"/>
-                                <color key="backgroundColor" red="0.074509803920000006" green="0.5450980392" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="26N-ED-ajE" userLabel="Container View">
+                                <rect key="frame" x="0.0" y="222" width="375" height="570"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="REp-8d-0I8">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="590"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6z-gg-hyI">
+                                                <rect key="frame" x="116" y="174" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="K6z-gg-hyI" secondAttribute="bottom" constant="395" id="CMa-sa-ypF"/>
+                                            <constraint firstItem="K6z-gg-hyI" firstAttribute="leading" secondItem="REp-8d-0I8" secondAttribute="leading" constant="116" id="dqL-KP-eoS"/>
+                                            <constraint firstAttribute="trailing" secondItem="K6z-gg-hyI" secondAttribute="trailing" constant="217" id="flg-XG-pzb"/>
+                                            <constraint firstItem="K6z-gg-hyI" firstAttribute="top" secondItem="REp-8d-0I8" secondAttribute="top" constant="174" id="jsx-x6-rOz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="gdZ-vY-5bd"/>
+                                    <constraint firstItem="REp-8d-0I8" firstAttribute="leading" secondItem="26N-ED-ajE" secondAttribute="leading" id="3Z6-up-clm"/>
+                                    <constraint firstItem="REp-8d-0I8" firstAttribute="top" secondItem="26N-ED-ajE" secondAttribute="top" id="Hyh-6Q-tkh"/>
+                                    <constraint firstAttribute="trailing" secondItem="REp-8d-0I8" secondAttribute="trailing" id="ZZ7-Xo-Ny9"/>
+                                    <constraint firstItem="REp-8d-0I8" firstAttribute="width" secondItem="26N-ED-ajE" secondAttribute="width" id="g3p-tq-9hq"/>
+                                    <constraint firstAttribute="bottom" secondItem="REp-8d-0I8" secondAttribute="bottom" id="hl5-F0-adh"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9BF-w3-dfg">
+                                <viewLayoutGuide key="contentLayoutGuide" id="NcJ-Aw-aMt"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="lcV-aK-hdI"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2s1-d3-VrN">
+                                <rect key="frame" x="166" y="59" width="37" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ug8-TD-B9w"/>
+                                    <constraint firstAttribute="width" constant="37" id="x9d-mD-wCp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CZT-Gi-Vpu" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="110" width="375" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mK0-rq-sJ5">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="u8o-qU-3ec">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tiN-tD-372">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
                             </collectionView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="26N-ED-ajE" userLabel="Container View">
-                                <rect key="frame" x="0.0" y="222" width="375" height="590"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="NcJ-Aw-aMt"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="lcV-aK-hdI"/>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="T5v-0O-Igl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="7Gr-0A-Ks9"/>
-                            <constraint firstAttribute="bottom" secondItem="26N-ED-ajE" secondAttribute="bottom" constant="20" symbolic="YES" id="7hr-kF-FGi"/>
-                            <constraint firstItem="26N-ED-ajE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9YH-kd-GSc"/>
-                            <constraint firstItem="26N-ED-ajE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9zs-S7-TbP"/>
-                            <constraint firstItem="T5v-0O-Igl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JUw-dC-wH1"/>
-                            <constraint firstItem="26N-ED-ajE" firstAttribute="top" secondItem="T5v-0O-Igl" secondAttribute="bottom" constant="17" id="MCV-Z6-sq3"/>
-                            <constraint firstItem="T5v-0O-Igl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NyJ-vb-B6X"/>
+                            <constraint firstItem="26N-ED-ajE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Cb1-hG-KeX"/>
+                            <constraint firstItem="26N-ED-ajE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GFk-r5-eRa"/>
+                            <constraint firstItem="2s1-d3-VrN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="OHC-gY-5XH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2s1-d3-VrN" secondAttribute="trailing" constant="172" id="fyF-g8-RBq"/>
+                            <constraint firstAttribute="bottom" secondItem="26N-ED-ajE" secondAttribute="bottom" constant="20" symbolic="YES" id="gtd-3n-N3m"/>
+                            <constraint firstItem="2s1-d3-VrN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="s93-7J-QiT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -71,6 +115,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BH-yu-vqE">
+                                <rect key="frame" x="175" y="311" width="37" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="info.circle" catalog="system"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="asdf" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k4q-uq-JuH">
+                                <rect key="frame" x="105" y="263" width="200" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -107,4 +162,7 @@
             <point key="canvasLocation" x="130.40000000000001" y="137.4384236453202"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="info.circle" catalog="system" width="64" height="60"/>
+    </resources>
 </document>
