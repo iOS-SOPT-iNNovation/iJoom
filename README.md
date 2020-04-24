@@ -68,7 +68,7 @@
 
 ### 13차 스터디
 
- * [13차 유투브 웹슈 실습+ Arkit 공부](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/13차%20스터디.md)
+ * [13차 유투브 웹뷰 실습+ Arkit 공부](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/13차%20스터디.md)
 
 
 ***
