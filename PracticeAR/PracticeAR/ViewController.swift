@@ -53,6 +53,7 @@ class ViewController: UIViewController {
             break
         }
     }
+
     private func addPinchGesture() {
         let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(didPinch(_:)))
         self.arSceneView.addGestureRecognizer(pinchGesture)
@@ -149,4 +150,12 @@ extension float4x4{
         let translation = self.columns.3
         return SIMD3<Float>(translation.x,translation.y, translation.z)
     }
+}
+
+
+class Core{
+    func asdf() {
+        
+    }
+   
 }

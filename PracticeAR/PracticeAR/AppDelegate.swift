@@ -11,10 +11,35 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    
+    var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let launchedBefore = UserDefaults.standard.bool(forKey: "hasLaunched")
+//        guard let windowScene = (scene as? UIWindowScene) else { return }
+//        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+//        window?.windowScene = windowScene
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let launchStoryBoard = UIStoryboard(name: "OnScreen", bundle: nil)
+        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var vc: UIViewController
+        
+        if launchedBefore{
+            vc = mainStoryBoard.instantiateViewController(identifier: "MainVC")
+            
+        }else {
+            vc = launchStoryBoard.instantiateViewController(identifier: "OnScreenVC")
+            
+        }
+        UserDefaults.standard.set(true, forKey: "hasLaunched")
+        
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
         return true
     }
 

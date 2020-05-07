@@ -13,6 +13,7 @@
 		558E16F6245CFCCA003A1EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558E16F4245CFCCA003A1EC2 /* Main.storyboard */; };
 		558E16F8245CFCCC003A1EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 558E16F7245CFCCC003A1EC2 /* Assets.xcassets */; };
 		558E16FB245CFCCC003A1EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558E16F9245CFCCC003A1EC2 /* LaunchScreen.storyboard */; };
+		55EFC9352462A472009F3596 /* OnScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EFC9342462A472009F3596 /* OnScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		558E16F7245CFCCC003A1EC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		558E16FA245CFCCC003A1EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		558E16FC245CFCCC003A1EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55EFC9342462A472009F3596 /* OnScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				558E16F7245CFCCC003A1EC2 /* Assets.xcassets */,
 				558E16F9245CFCCC003A1EC2 /* LaunchScreen.storyboard */,
 				558E16FC245CFCCC003A1EC2 /* Info.plist */,
+				55EFC9342462A472009F3596 /* OnScreen.storyboard */,
 			);
 			path = PracticeAR;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				558E16FB245CFCCC003A1EC2 /* LaunchScreen.storyboard in Resources */,
+				55EFC9352462A472009F3596 /* OnScreen.storyboard in Resources */,
 				558E16F8245CFCCC003A1EC2 /* Assets.xcassets in Resources */,
 				558E16F6245CFCCA003A1EC2 /* Main.storyboard in Resources */,
 			);
