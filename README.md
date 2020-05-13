@@ -81,3 +81,12 @@
 
 ***
 
+### 15차 스터디
+ * [OnBoardingScreen, SceneDelegate](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/15차%20스터디.md)
+ 
+ 
+ ***
+ 
+ 
+ ### 16차 스터디
+ * 음악재생 및 AVAudioPlayer
