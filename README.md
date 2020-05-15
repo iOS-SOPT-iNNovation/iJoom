@@ -89,4 +89,4 @@
  
  
  ### 16차 스터디
- * 음악재생 및 AVAudioPlayer
+ * [음악재생 및 AVAudioPlayer](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/16차%20스터디.md)
