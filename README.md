@@ -90,3 +90,13 @@
  
  ### 16차 스터디
  * [음악재생 및 AVAudioPlayer](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/16차%20스터디.md)
+
+
+***
+
+
+### 17차 스터디
+ * [MessageKit을 이용한 간단한 메세지앱](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/17차%20스터디.md)
+ 
+ 
+ ***
