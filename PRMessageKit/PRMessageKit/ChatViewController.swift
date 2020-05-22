@@ -20,8 +20,6 @@ struct Message: MessageType{
     var messageId: String
     var sentDate: Date
     var kind: MessageKind
-    
-    
 }
 
 class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLayoutDelegate, MessagesDisplayDelegate, InputBarAccessoryViewDelegate {

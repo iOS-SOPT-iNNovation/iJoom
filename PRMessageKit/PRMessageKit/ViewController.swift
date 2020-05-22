@@ -25,7 +25,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "John Smith"
+        cell.textLabel?.text = "John"
         cell.accessoryType = .disclosureIndicator
         return cell
     }
