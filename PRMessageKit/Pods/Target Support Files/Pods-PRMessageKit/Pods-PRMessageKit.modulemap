@@ -1,0 +1,6 @@
+framework module Pods_PRMessageKit {
+  umbrella header "Pods-PRMessageKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

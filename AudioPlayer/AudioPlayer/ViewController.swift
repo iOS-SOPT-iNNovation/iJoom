@@ -37,41 +37,43 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
     
     func initializePlayer() {
         
-        guard let soundAsset: NSDataAsset = NSDataAsset(name: "\(song[count])") else {
-            print("음원 파일 없습니다.")
-            return
-        }
-        
-        do {
-            try self.avPlayer = AVAudioPlayer(data: soundAsset.data)
-            self.avPlayer.delegate = self
-        } catch let error as NSError {
-            print("플레이어 초기화 실패")
-            print("코드 : \(error.code), 메세지 : \(error.localizedDescription)")
-        }
+//        guard let soundAsset: NSDataAsset = NSDataAsset(name: "\(song[count])") else {
+//            print("음원 파일 없습니다.")
+//            return
+//        }
+//
+//        do {
+//            try self.avPlayer = AVAudioPlayer(data: soundAsset.data)
+//            self.avPlayer.delegate = self
+//        } catch let error as NSError {
+//            print("플레이어 초기화 실패")
+//            print("코드 : \(error.code), 메세지 : \(error.localizedDescription)")
+//        }
         
         
         
         //MARK: error -- iOS 13 can't return URL?
-        //        let audioPath = Bundle.main.path(forResource: "Corporate", ofType: "mp3")!
-        //        let audioUrl = URL(fileURLWithPath: audioPath)
-        //        //mainBundle.pathForResource("\(song[counter])", ofType: "mp3")!
-        //
-        //       // avPlayer = AVAudioPlayer(contentsOf: NSURL(string: audioPath))
-        //        do{
-        //            avPlayer = try AVAudioPlayer(contentsOf: audioUrl)
-        //
-        //        }catch let error as NSError{
-        //            print("코드 : \(error.code), 메세지 : \(error.localizedDescription)")
-        //        }
-        //        let path = Bundle.main.path(forResource: "Future Islands - Tin Man", ofType: "mp3")!
-        //        let url = URL(fileURLWithPath: path)
-        //
-        //        do {
-        //            audioPlayer =  try AVAudioPlayer(contentsOf: url)
-        //        } catch {
-        //            // can't load file
-        //        }
+                let audioPath = Bundle.main.path(forResource: "2", ofType: "mp3")!
+                let audioUrl = URL(fileURLWithPath: audioPath)
+                //mainBundle.pathForResource("\(song[counter])", ofType: "mp3")!
+        
+               // avPlayer = AVAudioPlayer(contentsOf: NSURL(string: audioPath))
+                do{
+                    avPlayer = try AVAudioPlayer(contentsOf: audioUrl)
+        
+                }catch let error as NSError{
+                    print("코드 : \(error.code), 메세지 : \(error.localizedDescription)")
+                }
+        
+        
+//                let path = Bundle.main.path(forResource: "Future Islands - Tin Man", ofType: "mp3")!
+//                let url = URL(fileURLWithPath: path)
+//
+//                do {
+//                    audioPlayer =  try AVAudioPlayer(contentsOf: url)
+//                } catch {
+//                    // can't load file
+//                }
         
         
         
