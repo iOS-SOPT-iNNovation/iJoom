@@ -100,3 +100,7 @@
  
  
  ***
+ 
+ 
+ ### 18차 스터디
+  * [CollectionView paging효과 및 셀 커스텀(xib) 및 PageController사용기](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/18차%20스터디.md)
