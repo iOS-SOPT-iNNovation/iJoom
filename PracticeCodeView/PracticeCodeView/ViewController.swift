@@ -19,7 +19,10 @@ class ViewController: UIViewController {
         $0.font = UIFont.systemFont(ofSize: 18)
     }
     let nameTextField = UITextField()
-    let changeButton = UIButton()
+    let changeButton = UIButton().then {
+        $0.backgroundColor = .lightGray
+        $0.setTitle("Test Button normal", for: .normal)
+    }
     
     
     override func viewDidLoad() {
@@ -29,8 +32,10 @@ class ViewController: UIViewController {
         redView.backgroundColor = .systemRed
         self.view.addSubview(redView)
         self.view.addSubview(self.nameLabel)
+        self.view.addSubview(changeButton)
         redView.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
+        changeButton.translatesAutoresizingMaskIntoConstraints = false
 //        NSLayoutConstraint.activate([
 //            redView.centerXAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerXAnchor),
 //            redView.centerYAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerYAnchor),
@@ -40,6 +45,11 @@ class ViewController: UIViewController {
         redView.snp.makeConstraints {
            // $0.centerX.centerY.equalTo(self.view.safeAreaLayoutGuide)
             $0.width.height.equalTo(150)
+        }
+        changeButton.snp.makeConstraints {
+            
+            $0.bottom.equalToSuperview().offset(-20)
+            $0.left.equalToSuperview().offset(30)
         }
         self.nameLabel.snp.makeConstraints {
             $0.center.equalToSuperview()
