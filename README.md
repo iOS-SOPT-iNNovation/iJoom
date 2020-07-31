@@ -111,3 +111,9 @@
 
 ### 19차 스터디
  * [통신Data CollectionViewCell image처리 + CoreData 톺아보기](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/19차%20스터디.md)
+ 
+ 
+ ***
+ 
+ ### 20차 스터디
+  *[네이버지도API 사용 및 CustomAnimation, Swift에서 중요한 것](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/20차%20스터디.md)
