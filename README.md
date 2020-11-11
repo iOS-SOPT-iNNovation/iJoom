@@ -117,3 +117,14 @@
  
  ### 20차 스터디
   * [네이버지도API 사용 및 CustomAnimation, Swift에서 중요한 것](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/20차%20스터디.md)
+  
+  ***
+  
+  ### iOS Training 스터디
+  
+* [<1주차 11.06>](https://github.com/iOS-SOPT-iNNovation/iOS_Traning/issues?q=is%3Aissue+is%3Aclosed)
+* scene delegate에 대해 설명하시오.
+* 상태 변화에 따라 다른 동작을 처리하기 위한 앱델리게이트 메서드들을 설명하시오.
+* 앱이 foreground에 있을 때와 background에 있을 때 어떤 제약사항이 있나요?
+* 실제 디바이스가 없을 경우 개발 환경에서 할 수 있는 것과 없는 것을 설명하시오.
+* Bounds 와 Frame 의 차이점을 설명하시오.
