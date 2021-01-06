@@ -18,7 +18,7 @@
 ***
 
 ### 6차 스터디
-* [6차 NSCache를 이용한 이미지 캐싱처리](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/4차%20스터디%20.md)
+* [6차 NSCache를 이용한 이미지 캐싱처리](https://github.com/iOS-SOPT-iNNovation/iJoom/blob/master/6차%20스터디%20.md)
 
 ***
 
